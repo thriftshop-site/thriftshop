@@ -1,0 +1,26 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"dart-code.dart-code",
+		"bendixma.dart-data-class-generator",
+		"peterhdd.dartgettersetter",
+		"luanpotter.dart-import",
+		"dart-code.flutter",
+		"circlecodesolution.ccs-flutter-color",
+		"solidcodesmsdk.flutter-generators",
+		"robert-brunhage.flutter-riverpod-snippets",
+		"marcelovelasquez.flutter-tree",
+		"alexisvt.flutter-snippets",
+		"davidwoo.flutter-auto-import",
+		"gmlewis-vscode.flutter-stylizer",
+		"get-snippets.get-snippets",
+		"jeroen-meijer.pubspec-assist"
+	],
+	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+	"unwantedRecommendations": [
+		
+	]
+}
