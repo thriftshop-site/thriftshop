@@ -1,24 +1,21 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-
-import 'app/helpers/to_hex.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:thriftshop/app/themes/main_theme.dart';
+import 'package:thriftshop/app/themes/theme_service.dart';
 import 'app/routes/app_pages.dart';
 
-void main() {
+void main() async {
+  await GetStorage.init();
   runApp(
     GetMaterialApp(
       title: "Application",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Hex("#00275B").toColor,
-        accentColor: Hex("#B69859").toColor,
-        primaryColor: Hex("#00275B").toColor,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        splashColor: Colors.pink[50],
-      ),
+      theme: MainTheme().lightTheme,
+      darkTheme: MainTheme().darkTheme,
+      themeMode: ThemeService().getThemeMode(),
     ),
   );
 }
