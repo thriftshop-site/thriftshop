@@ -1,5 +1,5 @@
 name: thriftshop
-description: A new Flutter project.
+description: Thriftshop App - Community Driven App Development Marketplace
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -23,10 +23,19 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cloud_firestore: ^0.16.0
+  cloud_functions: ^0.9.0
   cupertino_icons: ^1.0.0
+  date_format: ^1.0.9
+  firebase_analytics: ^7.0.1
+  firebase_auth: ^0.20.0+1
+  firebase_core: ^0.7.0
+  firebase_storage: ^7.0.0
   flutter_svg: ^0.19.2+1
   get: 3.24.0
   get_storage: ^1.4.0
+  google_sign_in: ^4.5.9
+  uuid: ^2.2.2
 
 dev_dependencies:
   flutter_test:
