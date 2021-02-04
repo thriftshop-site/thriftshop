@@ -1,0 +1,18 @@
+{
+  "id": "1",
+  "category_id": "1",
+  "category_name": "Netlify",
+  "company_id": "1",
+  "company_name": "GOLDCODERS CORP",
+  "created_at": "08-17-1988",
+  "description": "this is a descrition",
+  "features_added": 100,
+  "features_request": 1000,
+  "logo": "/images/logo.png",
+  "name": "Thriftshop App",
+  "overview": "This is the Overview",
+  "plugins_count": 10,
+  "purchase_count": 3333,
+  "ratings_avg": 4,
+  "ratings_count": 1000
+}
