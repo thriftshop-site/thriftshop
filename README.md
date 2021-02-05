@@ -54,4 +54,4 @@ applicationId "dev.goldcoders.thriftshop"
 
 ## [Issues](https://github.com/thriftshop-site/thriftshop/issues)
 
-## License
+## [License](https://github.com/thriftshop-site/thriftshop/blob/main/LICENSE)
