@@ -52,6 +52,32 @@ The Developer Benefits From Getting App Revenue on the Platform.
 applicationId "dev.goldcoders.thriftshop"
 ```
 
+4.  Exporting Data
+> On Production
+
+https://cloud.google.com/sdk/gcloud/reference/beta/firestore/export
+
+> On Local
+
+5. Learn More on Firebase
+https://codelabs.developers.google.com/firebase-emulator#0
+
+https://developers.google.com/codelabs/firebase-emulator-test-rules#0
+
+https://firebase.google.com/docs/emulator-suite/install_and_configure#startup
+
+https://www.youtube.com/watch?v=yAFQVjxNWE8
+
+5. Creaeting Backup Data Locally
+mkdir storage
+firebase emulators:start
+// add your data then export
+firebase emulators:export .\storage\
+
+touch users.json
+firebase auth:export users.json or .csv
+firebase emulators:start --import=storage --export-on-exit=storage
+
 ## [Issues](https://github.com/thriftshop-site/thriftshop/issues)
 
 ## [License](https://github.com/thriftshop-site/thriftshop/blob/main/LICENSE)
