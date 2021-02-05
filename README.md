@@ -25,21 +25,7 @@ The Developer Benefits From Getting App Revenue on the Platform.
 
 `ctrl + p` then type `flutter change sdk` choose `beta`
 
-2. Set Up You Firebase Project
-
-- create new android project
-- add project name `dev.goldcoders.thriftshop`
-- on your project folder `cd android` then run `./gradlew signingReport`
-- Get SHA1 paste on SHA Requirements in Firebase site creation of new project
-- Download `google-services.json` and put it in your project folder inside `android/app`
-- open in editor `android/app/build.gradle` change this to the same name you name your app in creating new android app in firebase
-
-```
-// on line 42 android/app/build.gradle
-applicationId "dev.goldcoders.thriftshop"
-```
-
-3. Usage with VSCODE
+2. Usage with VSCODE
 
 - open your terminal
 - cd to your `repo` folder
@@ -51,15 +37,17 @@ applicationId "dev.goldcoders.thriftshop"
 - to check local firestore go to `http://localhost:4000/firestore`
 - try to sign up new user
 
-## Todo
 
-- Splash Page
-- Login Page
-- Profile Page
-- Dashboard Page
-- Settings Page
-- Playstore Like Page
-- Entry Page
-- Vote Page
-- Cart Page
-- License Page
+2. Set Up Firebase (Android Production)
+
+- create new android project in firebase
+- add project name `dev.goldcoders.thriftshop`
+- on your project folder `cd android` then run `./gradlew signingReport`
+- Get SHA1 paste on SHA Requirements in Firebase site creation of new project
+- Download `google-services.json` and put it in your project folder inside `android/app`
+- open in editor `android/app/build.gradle` change this to the same name you name your app in creating new android app in firebase
+
+```
+// on line 42 android/app/build.gradle
+applicationId "dev.goldcoders.thriftshop"
+```
