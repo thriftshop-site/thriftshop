@@ -18,8 +18,11 @@ The Developer Benefits From Getting App Revenue on the Platform.
 1. Setting Up 
 
 `git clone username/repo repo`
+
 `cd repo`
+
 `code .`
+
 `ctrl + p` then type `flutter change sdk` choose `beta`
 
 2. Set Up You Firebase Project
