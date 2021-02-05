@@ -1,0 +1,86 @@
+{
+  "[dart]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.rulers": [
+          80
+      ],
+      "editor.selectionHighlight": false,
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": false,
+  },
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": false,
+      "editor.tabSize": 2
+  },
+  "[yaml]": {
+      "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "dart.openDevTools": "flutter",
+  "dart.debugSdkLibraries": false,
+  "dart.previewLsp": true,
+  // run fvm install ${version}
+  "dart.flutterSdkPaths": [
+      "C:\\Users\\masterpowers\\fvm\\versions\\stable",
+      "C:\\Users\\masterpowers\\fvm\\versions\\beta",
+      "C:\\Users\\masterpowers\\fvm\\versions\\dev",
+  ],
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorStyle": "underline",
+  // change this with your fonts
+  "editor.fontFamily": "operator mono",
+  "editor.fontLigatures": true,
+  "editor.tabCompletion": "off",
+  "editor.scrollBeyondLastLine": false,
+  "editor.minimap.enabled": false,
+  "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.fixAll.eslint": true
+  },
+  "files.autoSave": "off",
+  "files.eol": "\n",
+  "javascript.validate.enable": false,
+  "terminal.integrated.splitCwd": "workspaceRoot",
+  "svg.preview.background": "transparent",
+  "terminal.integrated.cursorWidth": 2,
+  // install powershell 7
+  "terminal.external.windowsExec": "C:\\Program Files (x86)\\PowerShell\\7\\pwsh.exe",
+  "terminal.integrated.shell.windows": "C:\\Program Files (x86)\\PowerShell\\7\\pwsh.exe",
+  // change this with your fonts
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  // install neovim
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\masterpowers\\scoop\\apps\\neovim-nightly\\current\\bin\\nvim.exe",
+  // config your init.vim
+  "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\masterpowers\\AppData\\Local\\nvim\\init.vim",
+  // Change to Your Preference
+  "workbench.colorTheme": "Pop N' Lock Theme by Luxcium ✨ Alexis's Black ⛷",
+  "workbench.editor.enablePreview": false,
+  "files.exclude": {
+      "**.dart_tool": true,
+      "**.idea": true,
+      "**/.vscode": true
+  },
+  "search.exclude": {
+      ".flutter-plugins": true,
+      ".flutter-plugins-dependencies": true,
+      ".gitignore": true,
+      ".metadata": true,
+      "**/.fvm": true,
+      "**/.vscode": true,
+      "**/*.iml": true,
+      "**/android": true,
+      "**/build": true,
+      "**/ios": true,
+      "**/test": true,
+      "debug.log": true,
+      "pubspec.lock": true
+  },
+}

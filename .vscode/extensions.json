@@ -17,7 +17,19 @@
 		"davidwoo.flutter-auto-import",
 		"gmlewis-vscode.flutter-stylizer",
 		"get-snippets.get-snippets",
-		"jeroen-meijer.pubspec-assist"
+		"jeroen-meijer.pubspec-assist",
+		"chflick.firecode",
+		"pascalsenn.keyboard-quickfix",
+		"pkief.material-icon-theme",
+		"asvetliakov.vscode-neovim",
+		"luxcium.pop-n-lock-theme-vscode",
+		"jock.svg",
+		"simonsiefke.svg-preview",
+		"yeannylam.tab-out-or-reindent",
+		"redhat.vscode-yaml",
+		"esbenp.prettier-vscode",
+		"coenraads.bracket-pair-colorizer-2",
+		"aaron-bond.better-comments"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [
