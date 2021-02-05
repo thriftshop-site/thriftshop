@@ -38,7 +38,7 @@ The Developer Benefits From Getting App Revenue on the Platform.
 - try to sign up new user
 
 
-2. Set Up Firebase (Android Production)
+3. Set Up Firebase (Android Production)
 
 - create new android project in firebase
 - add project name `dev.goldcoders.thriftshop`
@@ -51,3 +51,7 @@ The Developer Benefits From Getting App Revenue on the Platform.
 // on line 42 android/app/build.gradle
 applicationId "dev.goldcoders.thriftshop"
 ```
+
+## [Issues](https://github.com/thriftshop-site/thriftshop/issues)
+
+## License
