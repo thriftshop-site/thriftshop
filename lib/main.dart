@@ -8,12 +8,13 @@ import 'app/themes/main_theme.dart';
 import 'app/themes/theme_service.dart';
 import 'app/routes/app_pages.dart';
 
-// ignore: non_constant_identifier_names
-bool USE_FIRESTORE_EMULATOR = false;
 void main() async {
+  const bool USE_FIRESTORE_EMULATOR = true;
+
   await GetStorage.init();
 
   WidgetsFlutterBinding.ensureInitialized();
+
   await Firebase.initializeApp();
 
   if (USE_FIRESTORE_EMULATOR) {
@@ -35,6 +36,3 @@ void main() async {
     ),
   );
 }
-// firebase init
-// select auth, functions and firestore
-// firebase emulators:start
