@@ -47,37 +47,50 @@ The Developer Benefits From Getting App Revenue on the Platform.
 - Download `google-services.json` and put it in your project folder inside `android/app`
 - open in editor `android/app/build.gradle` change this to the same name you name your app in creating new android app in firebase
 
-```
+```dart
 // on line 42 android/app/build.gradle
 applicationId "dev.goldcoders.thriftshop"
 ```
 
-4.  Exporting Data
-> On Production
+4. Export and Import Data
 
-https://cloud.google.com/sdk/gcloud/reference/beta/firestore/export
+Read this for [Exporting Data from Production](https://cloud.google.com/sdk/gcloud/reference/beta/firestore/export) 
 
-> On Local
+> On Local , You Can Create Your Data on Emulator UI
 
-5. Learn More on Firebase
-https://codelabs.developers.google.com/firebase-emulator#0
+- Create Your Storage folder ie.: `mkdir firestore`
 
-https://developers.google.com/codelabs/firebase-emulator-test-rules#0
+- Starting From Clean Slate
 
-https://firebase.google.com/docs/emulator-suite/install_and_configure#startup
+run: `firebase emulators:start --import=firestore --export-on-exit=firestore`
 
-https://www.youtube.com/watch?v=yAFQVjxNWE8
+- If You Want To Export Prior Exit , open new terminal, run the following commands:
 
-5. Creaeting Backup Data Locally
-mkdir storage
-firebase emulators:start
-// add your data then export
-firebase emulators:export .\storage\
+```sh
+mkdir new_firestore
+firebase emulators:export new_firestore
+```
 
+- if You want to Export The Users Used for Authentication, run the following commands:
+
+```sh
+// firestore emulator for auth should be running
+mkdir firebase_auth
+cd firebase_auth
 touch users.json
-firebase auth:export users.json or .csv
-firebase emulators:start --import=storage --export-on-exit=storage
+firebase auth:export users.json  //(it can be .json/.csv)
+```
+
+## Testing 
+
+Our Test Suites is Located at https://github.com/thriftshop-site/thriftshop-firestore-rules
 
 ## [Issues](https://github.com/thriftshop-site/thriftshop/issues)
 
 ## [License](https://github.com/thriftshop-site/thriftshop/blob/main/LICENSE)
+
+## References
+- [Firebase Emulator: Install and Config](https://firebase.google.com/docs/emulator-suite/install_and_configure#startup)
+- [Firebase Emulator](https://codelabs.developers.google.com/firebase-emulator#0)
+- [Firebase Emulator Test](https://developers.google.com/codelabs/firebase-emulator-test-rules#0)
+- [Local development with Firebase Emulator Suite](https://www.youtube.com/watch?v=yAFQVjxNWE8)
