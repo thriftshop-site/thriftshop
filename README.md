@@ -5,30 +5,40 @@ Community Dictates the Timeline and Development of Apps they Like.
 Users Benefits From The Community by lowering the Cost of App Development.
 The Developer Benefits From Getting App Revenue on the Platform.
 
-## Development
 
-### Requirements
+## Requirements
 - Neovim
 - VSCODE
 - NodeJS
 - Flutter Version Manager
 - Dart SDK
 
-### Development
-1. Setting Up 
+## Setting Up
 
-`git clone username/repo repo`
+> Clone Repo
 
-`cd repo`
+`git clone https://github.com/thriftshop-site/thriftshop`
+
+`cd thriftshop`
 
 `code .`
 
 `ctrl + p` then type `flutter change sdk` choose `beta`
 
-2. Usage with VSCODE
+## Offline Development with Firebase Emulator
+
+> Clone  thriftshop-firestore-rules
+
+`git clone https://github.com/thriftshop-site/thriftshop-firestore-rules`
+
+- run the Emulator
+
+`firebase emulators:start`
+
+## Usage with VSCODE
 
 - open your terminal
-- cd to your `repo` folder
+- cd to your `thriftshop` folder
 - open vscode  `code .`
 - type `ctrl + p` then type `flutter change sdk` choose `beta`
 - go to pubspec.yaml, `save`, it will fetch the correct dependencies using correct `flutter and dart sdk`
@@ -38,7 +48,7 @@ The Developer Benefits From Getting App Revenue on the Platform.
 - try to sign up new user
 
 
-3. Set Up Firebase (Android Production)
+## Production Set Up with Firebase
 
 - create new android project in firebase
 - add project name `dev.goldcoders.thriftshop`
@@ -52,11 +62,9 @@ The Developer Benefits From Getting App Revenue on the Platform.
 applicationId "dev.goldcoders.thriftshop"
 ```
 
-4. Export and Import Data
+## Export and Import Data
 
-Read this for [Exporting Data from Production](https://cloud.google.com/sdk/gcloud/reference/beta/firestore/export) 
-
-> On Local , You Can Create Your Data on Emulator UI
+> Go to `thriftshop-firestore-rules` Directory
 
 - Create Your Storage folder ie.: `mkdir firestore`
 
@@ -83,14 +91,12 @@ firebase auth:export users.json  //(it can be .json/.csv)
 
 ## Testing 
 
-Our Test Suites is Located at https://github.com/thriftshop-site/thriftshop-firestore-rules
+> We Can Run Our Test Suite Using this Command 
+Note: Make Sure You are @ `thriftshop-firestore-rules`
+
+run: `firebase emulators:exec --only firestore "yarn test-firestore"`
+
 
 ## [Issues](https://github.com/thriftshop-site/thriftshop/issues)
 
 ## [License](https://github.com/thriftshop-site/thriftshop/blob/main/LICENSE)
-
-## References
-- [Firebase Emulator: Install and Config](https://firebase.google.com/docs/emulator-suite/install_and_configure#startup)
-- [Firebase Emulator](https://codelabs.developers.google.com/firebase-emulator#0)
-- [Firebase Emulator Test](https://developers.google.com/codelabs/firebase-emulator-test-rules#0)
-- [Local development with Firebase Emulator Suite](https://www.youtube.com/watch?v=yAFQVjxNWE8)
