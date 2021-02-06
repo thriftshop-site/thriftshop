@@ -12,6 +12,8 @@ The Developer Benefits From Getting App Revenue on the Platform.
 - NodeJS
 - Flutter Version Manager
 - Dart SDK
+- Firebase CLI
+- Android Studio
 
 ## Setting Up
 
@@ -25,7 +27,7 @@ The Developer Benefits From Getting App Revenue on the Platform.
 
 `ctrl + p` then type `flutter change sdk` choose `beta`
 
-## Offline Development with Firebase Emulator
+## Offline First Development
 
 > Clone  thriftshop-firestore-rules
 
@@ -35,22 +37,19 @@ The Developer Benefits From Getting App Revenue on the Platform.
 
 `firebase emulators:start`
 
-## Usage with VSCODE
+## Usage with VSCODE with Android Emulators
 
 - open your terminal
 - cd to your `thriftshop` folder
 - open vscode  `code .`
 - type `ctrl + p` then type `flutter change sdk` choose `beta`
 - go to pubspec.yaml, `save`, it will fetch the correct dependencies using correct `flutter and dart sdk`
-- run local firebase server with `firebase emulators:start`
 - press `f5` then launch your emulator 
-- to check local firestore go to `http://localhost:4000/firestore`
-- try to sign up new user
 
 
 ## Production Set Up with Firebase
 
-- create new android project in firebase
+- create new android project in [firebase](https://console.firebase.google.com/)
 - add project name `dev.goldcoders.thriftshop`
 - on your project folder `cd android` then run `./gradlew signingReport`
 - Get SHA1 paste on SHA Requirements in Firebase site creation of new project
